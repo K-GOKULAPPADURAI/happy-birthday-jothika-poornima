@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Birthday Wishes</title>
+    <title>Happy Birthday Jothika</title>
     <style>
         body {
             background-color: #000000;
@@ -10,18 +10,18 @@
         }
         
         h1 {
-            color: #FFD700;
+            color: #C0C0C0;
             font-size: 48px;
             text-align: center;
             margin-top: 50px;
         }
-          h2 {
-            color: #FFD700;
+        h2{
+            color: #C0C0C0;
             font-size: 48px;
             text-align: center;
             margin-top: 50px;
         }
-        
+            
         .container {
             display: flex;
             justify-content: center;
@@ -68,8 +68,9 @@
     </style>
 </head>
 <body>
-    <h1>Happy Birthday to Jothika Poornima Thangachi</h1>
+    <h1>Birthday Wishes for Jothika Poornima Thangachi</h1>
     <h2 style="color: gold;">YEN INIYA PIRENTHA NAAL VAZTHUKAL THANGACHI</h2>
+   
     <div class="container">
         <div class="block" onclick="showMessage('Always smile like a queen.')">
             <p>Click here to see a quote</p>
@@ -82,7 +83,7 @@
         </div>
     </div>
     <div class="message" id="message"></div>
-    <div id="footer">By Yours, dear brother, K. Gokulappadurai, <a href="https://drive.google.com/drive/folders/1Dh3c5CukirNFu_9gAy1fJPpZ7LbDtH8O?usp=sharing">Click to view your wonderful moments</a>
+    <div id="footer">By Yours, dear brother, K. Gokulappadurai, <a href="https://drive.google.com/file/d/1GdTxjoS8UVd6z6L5od4Cww-C0ErvtLHo/view">Click to view your wonderful memories</a>
     </div>
     <script>
         var quotes = [
@@ -101,12 +102,6 @@
             document.getElementById("message").innerHTML = quotes[currentIndex];
             currentIndex = (currentIndex + 1) % quotes.length;
         }
-
-        document.addEventListener('keydown', function(event) {
-            if (event.code === 'Tab') {
-                showMessage();
-            }
-        });
 
         window.onload = showMessage;
     </script>

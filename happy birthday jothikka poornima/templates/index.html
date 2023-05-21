@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Wishes</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            color: #FFFFFF;
+        }
+        
+        h1 {
+            color: #FFD700;
+            font-size: 48px;
+            text-align: center;
+            margin-top: 50px;
+        }
+          h2 {
+            color: #FFD700;
+            font-size: 48px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        
+        .block {
+            background-color: #FFD700;
+            border-radius: 10px;
+            box-shadow: 5px 5px #C0C0C0;
+            color: #000000;
+            font-size: 24px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .block:hover {
+            transform: scale(1.1);
+        }
+        
+        #message {
+            background-color: #C0C0C0;
+            border-radius: 10px;
+            box-shadow: 5px 5px #FFD700;
+            color: #000000;
+            font-size: 24px;
+            margin: 0 auto;
+            max-width: 80%;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        
+        #footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday to Jothika Poornima Thangachi</h1>
+    <h2 style="color: gold;">YEN INIYA PIRENTHA NAAL VAZTHUKAL THANGACHI</h2>
+    <div class="container">
+        <div class="block" onclick="showMessage('Always smile like a queen.')">
+            <p>Click here to see a quote</p>
+        </div>
+        <div class="block" onclick="showMessage('Give hope to everyone with your wonderful energetic attitude.')">
+            <p>Click here to see another quote</p>
+        </div>
+        <div class="block" onclick="showMessage('Understand everyone\'s feelings and please try to be more empathetic.')">
+            <p>Click here to see one more quote</p>
+        </div>
+    </div>
+    <div class="message" id="message"></div>
+    <div id="footer">By Yours, dear brother, K. Gokulappadurai, <a href="https://drive.google.com/drive/folders/1Dh3c5CukirNFu_9gAy1fJPpZ7LbDtH8O?usp=sharing">Click to view your wonderful moments</a>
+    </div>
+    <script>
+        var quotes = [
+            "Always smile like a queen",
+            "Give hope to everyone with your wonderful energetic attitude",
+            "Understand everyone's feelings and please try to be more empathetic",
+            "Live long, be happy with your chosen life partner",
+            "Please know your worth and capabilities and try to implement them into your passion",
+            "In the end, you are not an ordinary one, Jothika, and you are my sister. Understand that clearly.",
+            "Have a nice day with your memories and friends. Have fun always. Love you. You're my sister, and I'm your brother always. No change in this. Please don't be more egotistic, and I'm not an egotistic one due to your ignorance and hesitation only I have changed like this."
+        ];
+
+        var currentIndex = 0;
+
+        function showMessage() {
+            document.getElementById("message").innerHTML = quotes[currentIndex];
+            currentIndex = (currentIndex + 1) % quotes.length;
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.code === 'Tab') {
+                showMessage();
+            }
+        });
+
+        window.onload = showMessage;
+    </script>
+</body>
+</html>
